@@ -1,0 +1,72 @@
+.wave {
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(../images/Wave.png);
+    animation: animate 7.9s linear infinite;
+
+}
+
+.wave::before{
+    content: '';
+    width: 100%;
+    height: 143px;
+	background: url(../images/Wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.27;
+    animation: animate-re 9.56s linear infinite;
+
+}
+
+.wave::after{
+    content: '';
+    width: 100%;
+    height: 143px;
+	background: url(../images/Wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.43;
+    animation-delay: -4.5s;
+    animation: animate 8.9s linear infinite;
+
+}
+#layanan {
+    position: relative;
+    background-color: #ffe13e;
+	padding: 90px 0 110px;
+}
+#layanan h1 {
+    margin-left:10px;
+	font-size: 48px;
+	font-weight: 700;
+}
+span.garis {
+	width: 200px;
+	height: 4px;
+	background: #8d8d99;
+	display: block;
+    margin-top:30px ;
+    margin-bottom: 30px;
+}
+
+@keyframes animate {
+0%{
+    background-position: 0;
+}100%{
+    background-position: 1360px;
+}    
+}
+
+@keyframes animate-re {
+    0%{
+        background-position: 1360px;
+    }100%{
+        background-position: 0px;
+    }    
+}
+

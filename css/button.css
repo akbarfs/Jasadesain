@@ -1,0 +1,19 @@
+#pricing button {
+	width: 230px;
+	height: 85px;
+	line-height: 85px;
+	background: #ffe13e;
+	color: #202242;
+	font-size: 18px;
+	display: block;
+	border: 4px solid #fff;
+	text-align: center;
+	font-weight: 700;
+}
+#pricing button:hover{background:#fff; transition:all 0.4s;}
+#pricing a{
+    background-color: transparent;
+    border: none;
+    display: inline;
+}
+#pricing a:hover{background-color: transparent;}
